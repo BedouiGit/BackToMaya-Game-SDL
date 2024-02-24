@@ -1,0 +1,67 @@
+\hypertarget{main_8c}{}\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+
+
+Testing program  ragnarok.  
+
+
+{\ttfamily \#include \char`\"{}fonction.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+rotozoom.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_ad15fd51e3a04ef8b8cc88202434480fb}\label{main_8c_ad15fd51e3a04ef8b8cc88202434480fb}} 
+void {\bfseries savee} (\hyperlink{structennemis}{ennemis} ennemi, \hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, \hyperlink{structvie}{vie} \hyperlink{structvie}{vie}, S\+D\+L\+\_\+\+Rect camera)
+\item 
+\mbox{\Hypertarget{main_8c_a443253fe2ba8b28fd860a78dc9ed1a8c}\label{main_8c_a443253fe2ba8b28fd860a78dc9ed1a8c}} 
+void {\bfseries load} (\hyperlink{structennemis}{ennemis} $\ast$ennemi, \hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso}, \hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie}, S\+D\+L\+\_\+\+Rect $\ast$camera, int $\ast$continuer, int $\ast$save)
+\item 
+void \hyperlink{main_8c_a47dd868682e68ad2204e1a4054a2361d}{game} (S\+D\+L\+\_\+\+Surface $\ast$ecran, int save, int manette)
+\begin{DoxyCompactList}\small\item\em void game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Testing program  ragnarok. 
+
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3/5/2019 Testing program for functionallity 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a47dd868682e68ad2204e1a4054a2361d}\label{main_8c_a47dd868682e68ad2204e1a4054a2361d}} 
+\index{main.\+c@{main.\+c}!game@{game}}
+\index{game@{game}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{game()}{game()}}
+{\footnotesize\ttfamily void game (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{int}]{save,  }\item[{int}]{manette }\end{DoxyParamCaption})}
+
+
+
+void game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ecran} & our screen of the game \\
+\hline
+{\em save} & to load our game \\
+\hline
+{\em manette} & to chose the play mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return nothing 
+\end{DoxyReturn}

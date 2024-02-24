@@ -1,0 +1,45 @@
+#include "herbes2.h"
+
+void init_herbes2 (void)
+{
+	int i;
+        jeu.ramasser=nbre_ramasser;
+        for (i=0;i<jeu.ramasser;i++)
+        {
+		ram[i].image=loadImage("ram.png");
+                ram[i].w=ram[i].image->w;
+                ram[i].h=ram[i].image->h;
+        }
+	//les positions neksine
+}
+
+void update_herbes2 (void)
+{
+	int i,b=0;
+	for (i=0;i<jeu.ramasser;i++)
+	{
+		if (col_et(&jonathan,&ram[i])==1)
+                {
+			ram[i]=ram[jeu.ramasser-1];
+                        b+=1;
+		}
+	}
+			jeu.ramasser-=b;
+                        jonathan.score2+=b;
+}
+
+void draw_herbes2 (void)
+{
+	int i;
+	for (i=0;i<jeu.ramasser;i++)
+	{
+		    SDL_Rect dest;
+
+		    dest.x = ram[i].x-map.startX;
+		    dest.y = ram[i].y;
+		    dest.w = ram[i].w;
+		    dest.h = ram[i].h;
+		    SDL_BlitSurface (ram[i].image, NULL , jeu.screen, &dest);
+
+	}
+}
